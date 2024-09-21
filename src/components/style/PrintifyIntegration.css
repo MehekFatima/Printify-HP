@@ -1,0 +1,100 @@
+.printify-integration {
+    text-align: center;
+    position: relative; /* Ensure position is relative for child elements */
+  }
+  
+  .connected-elements {
+    position: relative; /* Position relative for absolute positioning of elements */
+    height: 300px; /* Set a height for the container */
+    display: flex; /* Use flexbox for positioning */
+    justify-content: center; /* Center elements horizontally */
+    align-items: flex-start; /* Align items to the top */
+    flex-wrap: wrap; /* Allow wrapping of elements */
+  }
+  
+  .element {
+    width: 150px; /* Size of sliding images */
+    height: 150px; /* Size of sliding images */
+    opacity: 0; 
+    background: white; 
+    border: none; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s ease; 
+    position: absolute; 
+    display: flex; /* Use flexbox to center content */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+  }
+  
+  /* Positioning for top images */
+  .top-left {
+    top: -100px; /* Move up for top-left position */
+    left: 10%; /* Centering adjustment */
+  }
+  
+  .top-right {
+    top: -100px; /* Move up for top-right position */
+    right: 10%; /* Centering adjustment */
+  }
+  
+  /* Positioning for bottom images */
+  .bottom-left {
+    bottom: -10px; /* Adjust for bottom-left position */
+    left: 10%; /* Centering adjustment */
+  }
+  
+  .bottom-right {
+    bottom: -10px; /* Adjust for bottom-right position */
+    right: 10%; /* Centering adjustment */
+  }
+  
+  /* Hover effect */
+  .element img, .printify-integration img {
+    transition: transform 0.3s ease; /* Smooth transition for scaling */
+  }
+  
+  /* Scale effect on hover */
+  .element img:hover, .printify-integration img:hover {
+    transform: scale(1.1); /* Scale the image on hover */
+  }
+  
+  /* Style for the green image */
+  .printify-integration img {
+    border: 2px solid transparent; /* Green border for the green image */
+    border-radius: 10px; /* Rounded corners */
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .element {
+      width: 120px; /* Smaller size for smaller screens */
+      height: 120px; /* Smaller size for smaller screens */
+    }
+  
+    .top-left, .top-right {
+      top: -80px; /* Move up for smaller screens */
+    }
+  
+    .bottom-left, .bottom-right {
+      bottom: -60px; /* Adjust for bottom positions */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .element {
+      width: 100px; /* Even smaller size for very small screens */
+      height: 100px; /* Even smaller size for very small screens */
+    }
+  
+    .top-left, .top-right {
+      top: -60px; /* Move further up for smaller screens */
+    }
+    img {
+        max-width: 90px;
+    }
+    .bottom-left, .bottom-right {
+      bottom: 74px; /* Adjust for bottom positions */
+    }
+  }
+  

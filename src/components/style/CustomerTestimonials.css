@@ -1,0 +1,43 @@
+.customer-testimonials {
+    padding: 40px;
+    border-radius: 8px;
+    background-color: #d4edda; /* Light green background */
+}
+
+.testimonial-card {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff; /* White background for each testimonial */
+    border-radius: 15px; /* Slight rounding for the testimonial cards */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for a cleaner look */
+    margin-bottom: 20px;
+}
+
+.testimonial-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    background-color: #f8f9fa; /* Light gray background for the icon */
+    color: gold !important; /* Set the icon color to gold */
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /* Makes the icon background circular */
+    border: 2px solid #18c75a; /* Optional: Add a border around the icon circle */
+}
+
+.testimonial-name {
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.testimonial-rating {
+    margin-top: 10px;
+    color: gold; /* Ensure stars are also gold */
+}
+
+.testimonial-text {
+    font-size: 1em;
+    color: #555; /* Neutral color for testimonial text */
+}
